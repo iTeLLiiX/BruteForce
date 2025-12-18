@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFESSIONAL BRUTE FORCE CRACKING ENGINE v3.0 | Enterprise Password Analysis System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="PROFESSIONAL BRUTE FORCE CRACKING ENGINE - Enterprise Password Analysis & Security Assessment System">
+    <meta name="keywords" content="Brute Force, Password Cracking, Cybersecurity, Penetration Testing, Security Assessment">
+    <meta name="author" content="MiniMax Agent">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="PROFESSIONAL BRUTE FORCE CRACKING ENGINE v3.0">
+    <meta property="og:description" content="Enterprise Password Analysis & Security Assessment System">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon with Security Icon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300ff00' stroke-width='2'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/><path d='M9 12l2 2 4-4'/><circle cx='12' cy='12' r='10'/></svg>">
+</head>
+<body>
+    <div class="main-container">
+        <!-- SECURITY CONSOLE HEADER -->
+        <header class="security-header">
+            <div class="header-grid">
+                <div class="system-info">
+                    <div class="system-title">
+                        <span class="brand-accent">⚡ CYBERSEC</span>
+                        <h1 class="main-title">
+                            <span class="title-primary">BRUTE FORCE</span>
+                            <span class="title-secondary">CRACKING ENGINE</span>
+                        </h1>
+                    </div>
+                    <div class="version-info">
+                        <span class="version">v3.0 ENTERPRISE</span>
+                        <span class="classification">CLASSIFIED</span>
+                    </div>
+                </div>
+                
+                <div class="performance-dashboard">
+                    <div class="stat-card active">
+                        <div class="stat-label">ATTACK SPEED</div>
+                        <div class="stat-value critical" id="attack-speed">2.147.483.600</div>
+                        <div class="stat-unit">HASHES/SEC</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">ACTIVE THREADS</div>
+                        <div class="stat-value">64</div>
+                        <div class="stat-unit">PARALLEL</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">SUCCESS RATE</div>
+                        <div class="stat-value">99.97%</div>
+                        <div class="stat-unit">EFFICIENCY</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">SYSTEM STATUS</div>
+                        <div class="stat-value status-online">ONLINE</div>
+                        <div class="stat-unit">OPERATIONAL</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN ANALYSIS INTERFACE -->
+        <div class="analysis-interface">
+            <!-- LEFT COLUMN: INPUT & ANALYSIS -->
+            <div class="left-column">
+                <!-- PASSWORD INPUT PANEL -->
+                <section class="input-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">
+                            <span class="icon">🎯</span>
+                            TARGET ANALYSIS INPUT
+                        </h2>
+                        <div class="control-buttons">
+                            <button class="control-btn primary" id="scan-btn" aria-label="Scan Target">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                                SCAN
+                            </button>
+                            <button class="control-btn secondary" id="generate-btn" aria-label="Generate Secure Password">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                                GENERATE
+                            </button>
+                            <button class="control-btn" id="toggle-visibility" aria-label="Toggle Visibility">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="input-container">
+                        <input 
+                            type="password" 
+                            id="password-input" 
+                            class="password-input" 
+                            placeholder="ENTER TARGET PASSWORD FOR ANALYSIS..."
+                            autocomplete="off"
+                            spellcheck="false"
+                            maxlength="128"
+                        >
+                        <div class="input-overlay">
+                            <div class="scan-line"></div>
+                        </div>
+                    </div>
+
+                    <!-- TARGET EXAMPLES -->
+                    <div class="examples-section">
+                        <span class="examples-label">QUICK TEST TARGETS:</span>
+                        <div class="examples-grid">
+                            <button class="example-btn" data-password="123">WEAK-123</button>
+                            <button class="example-btn" data-password="password">BASIC-PASSWORD</button>
+                            <button class="example-btn" data-password="Password123">MEDIUM-PASS123</button>
+                            <button class="example-btn" data-password="MyS3cur3P@ssw0rd!">STRONG-SECURE!</button>
+                            <button class="example-btn" data-password="T5$xK9*mN2@vL8qR7">ULTRA-STRONG</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECURITY ANALYSIS PANEL -->
+                <section class="analysis-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">
+                            <span class="icon">🔍</span>
+                            SECURITY ASSESSMENT
+                        </h2>
+                        <div class="analysis-status" id="analysis-status">READY</div>
+                    </div>
+
+                    <!-- SECURITY METER -->
+                    <div class="security-meter">
+                        <div class="meter-header">
+                            <span class="meter-label">SECURITY THREAT LEVEL</span>
+                            <span class="meter-value" id="security-level">ANALYZE</span>
+                        </div>
+                        <div class="meter-display">
+                            <div class="meter-bar">
+                                <div class="meter-fill critical" id="meter-fill"></div>
+                                <div class="meter-pointer" id="meter-pointer"></div>
+                                <div class="meter-zones">
+                                    <div class="zone critical">CRITICAL</div>
+                                    <div class="zone high">HIGH</div>
+                                    <div class="zone medium">MEDIUM</div>
+                                    <div class="zone low">LOW</div>
+                                    <div class="zone secure">SECURE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ANALYSIS METRICS -->
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-icon">📏</div>
+                            <div class="metric-content">
+                                <div class="metric-label">TARGET LENGTH</div>
+                                <div class="metric-value mono" id="password-length">0</div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">🔤</div>
+                            <div class="metric-content">
+                                <div class="metric-label">CHARACTER SET</div>
+                                <div class="metric-value" id="character-type">UNKNOWN</div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">🎯</div>
+                            <div class="metric-content">
+                                <div class="metric-label">CHARACTER SPACE</div>
+                                <div class="metric-value mono" id="character-count">0</div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">🔢</div>
+                            <div class="metric-content">
+                                <div class="metric-label">TOTAL COMBINATIONS</div>
+                                <div class="metric-value mono" id="combinations">1</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGHT COLUMN: RESULTS & ASSESSMENT -->
+            <div class="right-column">
+                <!-- CRACKING RESULTS PANEL -->
+                <section class="results-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">
+                            <span class="icon">⚡</span>
+                            CRACKING TIME ESTIMATION
+                        </h2>
+                        <div class="results-status">
+                            <div class="status-indicator" id="status-indicator"></div>
+                            <span id="cracking-status">AWAITING TARGET</span>
+                        </div>
+                    </div>
+
+                    <div class="main-result">
+                        <div class="time-display">
+                            <div class="time-primary" id="main-time">
+                                <span class="time-value">ANALYZE TARGET</span>
+                            </div>
+                            <div class="time-description" id="comparison-text">
+                                Enter password to begin security assessment
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DETAILED TIME BREAKDOWN -->
+                    <div class="time-breakdown">
+                        <div class="time-card">
+                            <div class="time-label">SECONDS</div>
+                            <div class="time-value mono" id="seconds">0</div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time-label">MINUTES</div>
+                            <div class="time-value mono" id="minutes">0</div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time-label">HOURS</div>
+                            <div class="time-value mono" id="hours">0</div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time-label">DAYS</div>
+                            <div class="time-value mono" id="days">0</div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time-label">YEARS</div>
+                            <div class="time-value mono" id="years">0</div>
+                        </div>
+                        <div class="time-card">
+                            <div class="time-label">MILLENNIA</div>
+                            <div class="time-value mono" id="millennia">0</div>
+                        </div>
+                    </div>
+
+                    <!-- ADVANCED ASSESSMENT -->
+                    <div class="advanced-assessment">
+                        <div class="assessment-section">
+                            <h4>ATTACK PARAMETERS</h4>
+                            <div class="assessment-grid">
+                                <div class="assessment-item">
+                                    <span class="assessment-label">Attack Speed:</span>
+                                    <span class="assessment-value mono">2.147.483.600 H/S</span>
+                                </div>
+                                <div class="assessment-item">
+                                    <span class="assessment-label">Total Combinations:</span>
+                                    <span class="assessment-value mono" id="total-combinations">1</span>
+                                </div>
+                                <div class="assessment-item">
+                                    <span class="assessment-label">Entropy Level:</span>
+                                    <span class="assessment-value" id="entropy-bits">0 bits</span>
+                                </div>
+                                <div class="assessment-item">
+                                    <span class="assessment-label">Security Rating:</span>
+                                    <span class="assessment-value" id="entropy-class">UNRATED</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HARDWARE COMPARISON -->
+                        <div class="assessment-section">
+                            <h4>HARDWARE COMPARISON</h4>
+                            <div class="assessment-grid">
+                                <div class="assessment-item">
+                                    <span class="assessment-label">Consumer GPU (1B/s):</span>
+                                    <span class="assessment-value mono" id="gpu-time">-</span>
+                                </div>
+                                <div class="assessment-item">
+                                    <span class="assessment-label">Data Center (10B/s):</span>
+                                    <span class="assessment-value mono" id="datacenter-time">-</span>
+                                </div>
+                                <div class="assessment-item">
+                                    <span class="assessment-label">Cloud Cluster (100B/s):</span>
+                                    <span class="assessment-value mono" id="cloud-time">-</span>
+                                </div>
+                                <div class="assessment-item">
+                                    <span class="assessment-label">Quantum Computer:</span>
+                                    <span class="assessment-value mono" id="quantum-time">-</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CHARACTER SET REFERENCE -->
+                <section class="reference-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">
+                            <span class="icon">📋</span>
+                            CHARACTER SET ANALYSIS
+                        </h2>
+                    </div>
+                    <div class="reference-grid">
+                        <div class="reference-item">
+                            <span class="ref-label">NUMERIC ONLY</span>
+                            <span class="ref-value">10 chars (0-9)</span>
+                        </div>
+                        <div class="reference-item">
+                            <span class="ref-label">LOWERCASE</span>
+                            <span class="ref-value">26 chars (a-z)</span>
+                        </div>
+                        <div class="reference-item">
+                            <span class="ref-label">MIXED CASE</span>
+                            <span class="ref-value">52 chars (A-Z, a-z)</span>
+                        </div>
+                        <div class="reference-item">
+                            <span class="ref-label">ALPHANUMERIC</span>
+                            <span class="ref-value">62 chars (A-Z, a-z, 0-9)</span>
+                        </div>
+                        <div class="reference-item">
+                            <span class="ref-label">FULL CHARACTER SET</span>
+                            <span class="ref-value">94 chars (A-Z, a-z, 0-9, !@#$...)</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECURITY RECOMMENDATIONS -->
+                <section class="tips-panel">
+                    <div class="panel-header">
+                        <h2 class="panel-title">
+                            <span class="icon">🛡️</span>
+                            SECURITY PROTOCOLS
+                        </h2>
+                    </div>
+                    <div class="protocols-grid">
+                        <div class="protocol-item">
+                            <div class="protocol-number">01</div>
+                            <div class="protocol-content">
+                                <div class="protocol-title">MINIMUM LENGTH: 16+ CHARS</div>
+                                <div class="protocol-desc">Strong passwords require minimum 16 characters for enterprise security</div>
+                            </div>
+                        </div>
+                        <div class="protocol-item">
+                            <div class="protocol-number">02</div>
+                            <div class="protocol-content">
+                                <div class="protocol-title">COMPLEXITY REQUIREMENT</div>
+                                <div class="protocol-desc">Combine uppercase, lowercase, numbers, and special characters</div>
+                            </div>
+                        </div>
+                        <div class="protocol-item">
+                            <div class="protocol-number">03</div>
+                            <div class="protocol-content">
+                                <div class="protocol-title">DICTIONARY ATTACK PROTECTION</div>
+                                <div class="protocol-desc">Avoid common words, names, and predictable patterns</div>
+                            </div>
+                        </div>
+                        <div class="protocol-item">
+                            <div class="protocol-number">04</div>
+                            <div class="protocol-content">
+                                <div class="protocol-title">UNIQUE CREDENTIALS</div>
+                                <div class="protocol-desc">Never reuse passwords across different systems and accounts</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- CONSOLE FOOTER -->
+        <footer class="console-footer">
+            <div class="footer-grid">
+                <div class="system-notice">
+                    <div class="notice-title">⚠️ SECURITY NOTICE</div>
+                    <div class="notice-content">
+                        This analysis tool operates locally. All calculations are performed client-side for maximum security. 
+                        Password data is never transmitted or stored on external servers.
+                    </div>
+                </div>
+                <div class="system-info">
+                    <div class="info-item">
+                        <span class="info-label">SYSTEM:</span>
+                        <span class="info-value">CYBERSEC ENTERPRISE v3.0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">CLASSIFICATION:</span>
+                        <span class="info-value">CONFIDENTIAL</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">DEVELOPER:</span>
+                        <span class="info-value">MINIMAX AGENT</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">INITIALIZING BRUTE FORCE ENGINE...</div>
+        </div>
+    </div>
+
+    <!-- Notification System -->
+    <div class="notification-container" id="notification-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
